@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DFezsU2D.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
+      </div>
+
+      <input
+        type="text"
+        id="datetime-picker"
+        class="my-4 px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg mr-3"
+      />
+      <button
+        type="button"
+        data-start
+        class="button px-6 py-2 bg-blue-600 text-white rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed"
+      >
+        Start
+      </button>
+
+      <div class="timer flex justify-center gap-6 p-4 bg-gray-100 rounded-lg">
+        <div class="field flex flex-col items-center">
+          <span class="value text-4xl font-bold text-blue-600" data-days
+            >00</span
+          >
+          <span class="label text-sm text-gray-600">Days</span>
+        </div>
+        <div class="field flex flex-col items-center">
+          <span class="value text-4xl font-bold text-blue-600" data-hours
+            >00</span
+          >
+          <span class="label text-sm text-gray-600">Hours</span>
+        </div>
+        <div class="field flex flex-col items-center">
+          <span class="value text-4xl font-bold text-blue-600" data-minutes
+            >00</span
+          >
+          <span class="label text-sm text-gray-600">Minutes</span>
+        </div>
+        <div class="field flex flex-col items-center">
+          <span class="value text-4xl font-bold text-blue-600" data-seconds
+            >00</span
+          >
+          <span class="label text-sm text-gray-600">Seconds</span>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
